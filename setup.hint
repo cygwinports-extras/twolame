@@ -1,0 +1,6 @@
+category: Audio
+requires: cygwin libsndfile1 libtwolame0
+sdesc: "Optimized MP2 encoder (utility)"
+ldesc: "TwoLAME is an optimised MPEG Audio Layer 2 (MP2) encoder based 
+on tooLAME by Mike Cheng, which in turn is based upon the ISO dist10 
+code and portions of LAME."

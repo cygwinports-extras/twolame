@@ -1,0 +1,7 @@
+category: Audio
+requires: cygwin
+external-source: twolame
+sdesc: "Optimized MP2 encoder (runtime)"
+ldesc: "TwoLAME is an optimised MPEG Audio Layer 2 (MP2) encoder based 
+on tooLAME by Mike Cheng, which in turn is based upon the ISO dist10 
+code and portions of LAME."

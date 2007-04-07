@@ -1,0 +1,97 @@
+twolame
+------------------------------------------
+TwoLAME is an optimised MPEG Audio Layer 2 (MP2) encoder based on 
+tooLAME by Mike Cheng, which in turn is based upon the ISO dist10 code 
+and portions of LAME.
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  libsndfile1-1.0.17-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  bison-2.3-1
+  cygport-0.2.11-1
+  flex-2.5.33-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.twolame.org/
+
+Canonical download:
+  http://downloads.sourceforge.net/twolame/
+
+-------------------------------------------
+
+Build instructions:
+  unpack twolame-0.3.10-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./twolame-0.3.10-X.cygport all
+
+This will create:
+  /usr/src/twolame-0.3.10-X-src.tar.bz2
+  /usr/src/twolame-0.3.10-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(twolame)
+  /usr/bin/twolame.exe
+  /usr/share/doc/Cygwin/twolame-0.3.10.README
+  /usr/share/doc/twolame-0.3.10/AUTHORS
+  /usr/share/doc/twolame-0.3.10/COPYING
+  /usr/share/doc/twolame-0.3.10/ChangeLog
+  /usr/share/doc/twolame-0.3.10/README
+  /usr/share/doc/twolame-0.3.10/TODO
+  /usr/share/doc/twolame-0.3.10/api.txt
+  /usr/share/doc/twolame-0.3.10/html/api.html
+  /usr/share/doc/twolame-0.3.10/html/authors.html
+  /usr/share/doc/twolame-0.3.10/html/changelog.html
+  /usr/share/doc/twolame-0.3.10/html/doxygen.css
+  /usr/share/doc/twolame-0.3.10/html/doxygen.png
+  /usr/share/doc/twolame-0.3.10/html/index.html
+  /usr/share/doc/twolame-0.3.10/html/psycho.html
+  /usr/share/doc/twolame-0.3.10/html/readme.html
+  /usr/share/doc/twolame-0.3.10/html/todo.html
+  /usr/share/doc/twolame-0.3.10/html/twolame-manpage.css
+  /usr/share/doc/twolame-0.3.10/html/twolame-quirks.css
+  /usr/share/doc/twolame-0.3.10/html/twolame.1.html
+  /usr/share/doc/twolame-0.3.10/html/twolame.css
+  /usr/share/doc/twolame-0.3.10/html/twolame_8h-source.html
+  /usr/share/doc/twolame-0.3.10/html/twolame_8h.html
+  /usr/share/doc/twolame-0.3.10/html/vbr.html
+  /usr/share/doc/twolame-0.3.10/psycho.txt
+  /usr/share/doc/twolame-0.3.10/vbr.txt
+  /usr/share/man/man1/twolame.1.gz
+
+(libtwolame0)
+  /usr/bin/cygtwolame-0.dll
+
+(libtwolame-devel)
+  /usr/include/twolame.h
+  /usr/lib/libtwolame.a
+  /usr/lib/libtwolame.dll.a
+  /usr/lib/libtwolame.la
+  /usr/lib/pkgconfig/twolame.pc
+
+------------------
+
+Port Notes:
+
+----- version 0.3.10-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
