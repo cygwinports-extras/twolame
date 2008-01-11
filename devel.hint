@@ -1,5 +1,5 @@
 category: Audio
-requires: cygwin
+requires: cygwin libtwolame0
 external-source: twolame
 sdesc: "Optimized MP2 encoder (development)"
 ldesc: "TwoLAME is an optimised MPEG Audio Layer 2 (MP2) encoder based 
