@@ -5,20 +5,20 @@ tooLAME by Mike Cheng, which in turn is based upon the ISO dist10 code
 and portions of LAME.
 
 Runtime requirements:
-  cygwin-1.5.25-7
-  libsndfile1-1.0.17-2
+  cygwin-1.7.0-45
+  libgcc1-4.3.2-2
+  libsndfile1-1.0.19-10
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.25-7
-  autoconf2.5-2.61-1
-  automake1.10-1.10-1
-  binutils-20060817-1
-  cygport-0.3.7-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  libtool1.5-1.5.23a-2
-  make-3.81-1
+  autoconf2.5-2.63-10
+  automake1.10-1.10.1-10
+  binutils-20080624-2
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  libtool-2.2.7a-12
+  make-3.81-2
   sed-4.1.5-2
 
 Canonical website:
@@ -46,31 +46,30 @@ Files included in the binary packages:
 
 (twolame)
   /usr/bin/twolame.exe
-  /usr/share/doc/Cygwin/twolame-0.3.12.README
-  /usr/share/doc/twolame-0.3.12/AUTHORS
-  /usr/share/doc/twolame-0.3.12/COPYING
-  /usr/share/doc/twolame-0.3.12/ChangeLog
-  /usr/share/doc/twolame-0.3.12/README
-  /usr/share/doc/twolame-0.3.12/TODO
-  /usr/share/doc/twolame-0.3.12/api.txt
-  /usr/share/doc/twolame-0.3.12/html/api.html
-  /usr/share/doc/twolame-0.3.12/html/authors.html
-  /usr/share/doc/twolame-0.3.12/html/changelog.html
-  /usr/share/doc/twolame-0.3.12/html/doxygen.css
-  /usr/share/doc/twolame-0.3.12/html/doxygen.png
-  /usr/share/doc/twolame-0.3.12/html/index.html
-  /usr/share/doc/twolame-0.3.12/html/psycho.html
-  /usr/share/doc/twolame-0.3.12/html/readme.html
-  /usr/share/doc/twolame-0.3.12/html/todo.html
-  /usr/share/doc/twolame-0.3.12/html/twolame-manpage.css
-  /usr/share/doc/twolame-0.3.12/html/twolame-quirks.css
-  /usr/share/doc/twolame-0.3.12/html/twolame.1.html
-  /usr/share/doc/twolame-0.3.12/html/twolame.css
-  /usr/share/doc/twolame-0.3.12/html/twolame_8h-source.html
-  /usr/share/doc/twolame-0.3.12/html/twolame_8h.html
-  /usr/share/doc/twolame-0.3.12/html/vbr.html
-  /usr/share/doc/twolame-0.3.12/psycho.txt
-  /usr/share/doc/twolame-0.3.12/vbr.txt
+  /usr/share/doc/twolame/AUTHORS
+  /usr/share/doc/twolame/COPYING
+  /usr/share/doc/twolame/ChangeLog
+  /usr/share/doc/twolame/README
+  /usr/share/doc/twolame/TODO
+  /usr/share/doc/twolame/api.txt
+  /usr/share/doc/twolame/html/api.html
+  /usr/share/doc/twolame/html/authors.html
+  /usr/share/doc/twolame/html/changelog.html
+  /usr/share/doc/twolame/html/doxygen.css
+  /usr/share/doc/twolame/html/doxygen.png
+  /usr/share/doc/twolame/html/index.html
+  /usr/share/doc/twolame/html/psycho.html
+  /usr/share/doc/twolame/html/readme.html
+  /usr/share/doc/twolame/html/todo.html
+  /usr/share/doc/twolame/html/twolame-manpage.css
+  /usr/share/doc/twolame/html/twolame-quirks.css
+  /usr/share/doc/twolame/html/twolame.1.html
+  /usr/share/doc/twolame/html/twolame.css
+  /usr/share/doc/twolame/html/twolame_8h-source.html
+  /usr/share/doc/twolame/html/twolame_8h.html
+  /usr/share/doc/twolame/html/vbr.html
+  /usr/share/doc/twolame/psycho.txt
+  /usr/share/doc/twolame/vbr.txt
   /usr/share/man/man1/twolame.1.gz
 
 (libtwolame0)
@@ -87,11 +86,8 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 0.3.12-1 -----
-Version bump.
-
------ version 0.3.10-1 -----
-Initial release for Cygwin.
+----- version 0.3.12-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:

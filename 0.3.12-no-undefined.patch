@@ -1,0 +1,11 @@
+--- origsrc/twolame-0.3.12/libtwolame/Makefile.am	2008-01-09 05:06:21.000000000 -0600
++++ src/twolame-0.3.12/libtwolame/Makefile.am	2008-01-11 07:29:22.015625000 -0600
+@@ -3,7 +3,7 @@
+ lib_LTLIBRARIES = libtwolame.la
+ include_HEADERS = twolame.h
+ 
+-libtwolame_la_LDFLAGS  = -export-dynamic -version-info @TWOLAME_SO_VERSION@
++libtwolame_la_LDFLAGS  = -export-dynamic -version-info @TWOLAME_SO_VERSION@ -no-undefined
+ libtwolame_la_SOURCES = \
+ 	ath.c \
+ 	ath.h \
