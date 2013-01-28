@@ -1,0 +1,18 @@
+NAME="twolame"
+VERSION=0.3.13
+RELEASE=1
+CATEGORY="Audio"
+SUMMARY="Optimized MP2 encoder"
+DESCRIPTION="TwoLAME is an optimised MPEG Audio Layer 2 (MP2) encoder based
+on tooLAME by Mike Cheng, which in turn is based upon the ISO dist10 code and
+portions of LAME."
+HOMEPAGE="http://www.twolame.org/"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
+PATCH_URI="0.3.12-no-undefined.patch"
+
+PKG_NAMES="${PN} lib${PN}0 lib${PN}-devel"
+twolame_CONTENTS='usr/bin/*.exe usr/share/'
+libtwolame0_CONTENTS="usr/bin/*-0.dll"
+libtwolame_devel_CONTENTS='usr/include/ usr/lib/'
+
+KEEP_LA_FILES="none"
