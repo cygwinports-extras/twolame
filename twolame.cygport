@@ -1,6 +1,6 @@
 NAME="twolame"
 VERSION=0.3.13
-RELEASE=1
+RELEASE=2
 CATEGORY="Libs"
 SUMMARY="Optimized MP2 encoder"
 DESCRIPTION="TwoLAME is an optimised MPEG Audio Layer 2 (MP2) encoder based
@@ -10,10 +10,19 @@ HOMEPAGE="http://www.twolame.org/"
 SRC_URI="mirror://sourceforge/twolame/twolame-${VERSION}.tar.gz"
 PATCH_URI="0.3.12-no-undefined.patch"
 
-PKG_NAMES="twolame libtwolame0 libtwolame-devel"
+PKG_NAMES="twolame libtwolame0 libtwolame-devel libtwolame-doc"
 twolame_CATEGORY="Audio"
-twolame_CONTENTS='usr/bin/*.exe usr/share/'
-libtwolame0_CONTENTS="usr/bin/*-0.dll"
-libtwolame_devel_CONTENTS='usr/include/ usr/lib/'
-
-KEEP_LA_FILES="none"
+twolame_CONTENTS="
+	--exclude=html
+	usr/bin/twolame.exe
+	usr/share/doc/${NAME}
+	usr/share/man/man1/twolame.1*
+"
+libtwolame0_CONTENTS="usr/bin/cygtwolame-0.dll"
+libtwolame_devel_CONTENTS="
+	usr/include/twolame.h
+	usr/lib/libtwolame.dll.a
+	usr/lib/pkgconfig/twolame.pc
+"
+libtwolame_doc_CATEGORY="Doc"
+libtwolame_doc_CONTENTS="usr/share/doc/${NAME}/html/"
